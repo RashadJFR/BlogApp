@@ -1,0 +1,16 @@
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/bin/Debug/net9.0/BlogApp.DAL.deps.json
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/bin/Debug/net9.0/BlogApp.DAL.dll
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/bin/Debug/net9.0/BlogApp.DAL.pdb
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/bin/Debug/net9.0/BlogApp.Core.dll
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/bin/Debug/net9.0/BlogApp.Core.pdb
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.csproj.AssemblyReference.cache
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.GeneratedMSBuildEditorConfig.editorconfig
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.AssemblyInfoInputs.cache
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.AssemblyInfo.cs
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.csproj.CoreCompileInputs.cache
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.sourcelink.json
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp..7F175FDC.Up2Date
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.dll
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/refint/BlogApp.DAL.dll
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/BlogApp.DAL.pdb
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/Debug/net9.0/ref/BlogApp.DAL.dll

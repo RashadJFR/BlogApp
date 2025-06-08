@@ -1,0 +1,293 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/BlogApp.API.csproj": {}
+  },
+  "projects": {
+    "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/BlogApp.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/BlogApp.API.csproj",
+        "projectName": "BlogApp.API",
+        "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/BlogApp.API.csproj",
+        "packagesPath": "/Users/rashadjafarzade/.nuget/packages/",
+        "outputPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rashadjafarzade/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/BlogApp.Business.csproj": {
+                "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/BlogApp.Business.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[8.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[8.1.4, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUI": {
+              "target": "Package",
+              "version": "[8.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/BlogApp.Business.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/BlogApp.Business.csproj",
+        "projectName": "BlogApp.Business",
+        "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/BlogApp.Business.csproj",
+        "packagesPath": "/Users/rashadjafarzade/.nuget/packages/",
+        "outputPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rashadjafarzade/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/BlogApp.DAL.csproj": {
+                "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/BlogApp.DAL.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/BlogApp.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/BlogApp.Core.csproj",
+        "projectName": "BlogApp.Core",
+        "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/BlogApp.Core.csproj",
+        "packagesPath": "/Users/rashadjafarzade/.nuget/packages/",
+        "outputPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rashadjafarzade/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/BlogApp.DAL.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/BlogApp.DAL.csproj",
+        "projectName": "BlogApp.DAL",
+        "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/BlogApp.DAL.csproj",
+        "packagesPath": "/Users/rashadjafarzade/.nuget/packages/",
+        "outputPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.DAL/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/rashadjafarzade/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/BlogApp.Core.csproj": {
+                "projectPath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/BlogApp.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.300/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
