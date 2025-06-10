@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qFNOJ0/UzJs=",
+  "dgSpecHash": "Nfi/ZzcSufU=",
   "success": true,
   "projectFilePath": "/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Business/BlogApp.Business.csproj",
   "expectedPackageFiles": [
+    "/Users/rashadjafarzade/.nuget/packages/automapper/14.0.0/automapper.14.0.0.nupkg.sha512",
     "/Users/rashadjafarzade/.nuget/packages/azure.core/1.38.0/azure.core.1.38.0.nupkg.sha512",
     "/Users/rashadjafarzade/.nuget/packages/azure.identity/1.11.4/azure.identity.1.11.4.nupkg.sha512",
     "/Users/rashadjafarzade/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.1/microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

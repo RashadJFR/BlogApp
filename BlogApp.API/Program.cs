@@ -1,3 +1,6 @@
+using System.Reflection;
+using BlogApp.Business;
+using BlogApp.DAL;
 using BlogApp.DAL.Context;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,6 +15,9 @@ public class Program
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddSwaggerGen();
         builder.Services.AddOpenApi();
+        
+        builder.Services.AddBusinessService();
+        builder.Services.AddDALService();
 
         builder.Services.AddDbContext<BlogAppDbContext>(opt=>
         {
