@@ -4,5 +4,8 @@ namespace BlogApp.Business.Services.Interfaces;
 
 public interface ICategoryService
 {
-    GetCategoryDto GetById(int id);
+    Task<GetCategoryDto> CreateAsync(CreateCategoryDto dto);
+    Task UpdateAsync(UpdateCategoryDto dto);
+    Task<GetCategoryDto> GetById(int id);
+    List<GetCategoryDto> GetAll();
 }

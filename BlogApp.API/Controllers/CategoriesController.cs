@@ -1,4 +1,5 @@
 using AutoMapper;
+using BlogApp.Business.DTOs.Category;
 using BlogApp.Business.Exceptions.CategoryExceptions;
 using BlogApp.Business.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -32,6 +33,54 @@ public class CategoriesController : ControllerBase
             return BadRequest(e.Message);
         }
         return Ok();
+    }
+
+    [HttpGet]
+    public IActionResult GetAll()
+    {
+        try
+        {
+            return Ok(_categoryService.GetAll());
+        }
+        catch (CategoryNullException e)
+        {
+            return NotFound(e.Message);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create(CreateCategoryDto dto)
+    {
+        try
+        {
+            return Ok(await _categoryService.CreateAsync(dto));
+        }
+        catch (CategoryNameExistException e)
+        {
+            return StatusCode(StatusCodes.Status409Conflict, e.Message);
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+
+    [HttpPut]
+    public async Task<IActionResult> Update(UpdateCategoryDto dto)
+    {
+        try
+        {
+            await _categoryService.UpdateAsync(dto);
+            return Ok();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
     }
     
 }

@@ -2,7 +2,7 @@ using BlogApp.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace BlogApp.DAL.Context.Configurations;
+namespace BlogApp.DAL.Configurations;
 
 public class CategoryConfiguration : IEntityTypeConfiguration<Category>
 {

@@ -1,5 +1,7 @@
+using BlogApp.Business.DTOs.Category;
 using BlogApp.Business.Services.Implementations;
 using BlogApp.Business.Services.Interfaces;
+using FluentValidation.AspNetCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -11,5 +13,6 @@ public static class BusinessServiceRegistrations
     {
         services.AddAutoMapper(typeof(BusinessServiceRegistrations));
         services.AddScoped<ICategoryService, CategoryService>();
+        services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryDtoValidator>());
     }
 }
