@@ -1,7 +1,9 @@
 using System.Reflection;
 using BlogApp.Business;
+using BlogApp.Core.Entities;
 using BlogApp.DAL;
 using BlogApp.DAL.Context;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace BlogApp.API;
@@ -18,6 +20,12 @@ public class Program
         
         builder.Services.AddBusinessService();
         builder.Services.AddDALService();
+
+        builder.Services.AddIdentity<AppUser, IdentityRole>(opt =>
+        {
+            opt.Password.RequireNonAlphanumeric = false;
+            opt.Password.RequiredLength = 4;
+        }).AddEntityFrameworkStores<BlogAppDbContext>().AddDefaultTokenProviders();
 
         builder.Services.AddDbContext<BlogAppDbContext>(opt=>
         {
@@ -38,7 +46,8 @@ public class Program
         app.UseHttpsRedirection();
         app.UseAuthorization();
         app.MapControllers();
-
+        
+        
         app.Run();
     }
 }

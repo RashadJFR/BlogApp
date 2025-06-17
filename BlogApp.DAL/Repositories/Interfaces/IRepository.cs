@@ -13,6 +13,7 @@ public interface IRepository<TEntity> where TEntity : BaseEntity, new()
     public Task<TEntity> Create(TEntity entity);
     public void Update(TEntity entity);
     public void Delete(TEntity entity);
+    public void SoftDelete(TEntity entity);
     public Task<int> SaveChangesAsync();
     public Task<bool> IsExist(Expression<Func<TEntity, bool>> expression);
 }

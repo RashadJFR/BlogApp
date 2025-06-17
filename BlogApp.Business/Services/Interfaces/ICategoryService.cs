@@ -8,4 +8,6 @@ public interface ICategoryService
     Task UpdateAsync(UpdateCategoryDto dto);
     Task<GetCategoryDto> GetById(int id);
     List<GetCategoryDto> GetAll();
+    Task DeleteAsync(int id);
+    Task SoftDeleteAsync(int id);
 }

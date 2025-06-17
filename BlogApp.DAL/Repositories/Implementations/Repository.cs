@@ -19,12 +19,12 @@ public class Repository<TEntity>:IRepository<TEntity> where TEntity: BaseEntity,
     
     public async Task<TEntity> GetById(int id)
     {
-        return await Table.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id);
+        return await Table.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
     }
 
     public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null)
     {
-        return expression == null ? Table : Table.Where(expression);
+        return expression == null ? Table.Where(x=>!x.IsDeleted) : Table.Where(x=>!x.IsDeleted).Where(expression);
     }
 
     public async Task<TEntity> Create(TEntity entity)
@@ -41,6 +41,12 @@ public class Repository<TEntity>:IRepository<TEntity> where TEntity: BaseEntity,
     public void Delete(TEntity entity)
     {
         Table.Remove(entity);
+    }
+
+    public void SoftDelete(TEntity entity)
+    {
+        entity.IsDeleted = true;
+        Table.Update(entity);
     }
 
     public async Task<int> SaveChangesAsync()

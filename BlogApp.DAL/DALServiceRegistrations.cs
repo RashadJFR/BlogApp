@@ -1,5 +1,7 @@
+using BlogApp.Core.Entities;
 using BlogApp.DAL.Repositories.Implementations;
 using BlogApp.DAL.Repositories.Interfaces;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 

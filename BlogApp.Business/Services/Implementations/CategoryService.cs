@@ -70,4 +70,18 @@ public class CategoryService: ICategoryService
 
         return dtos;
     }
+
+    public async Task DeleteAsync(int id)
+    {
+        var category = await GetById(id);
+        _rep.Delete(_mapper.Map<Category>(category));
+        await _rep.SaveChangesAsync();
+    }
+
+    public async Task SoftDeleteAsync(int id)
+    {
+        var category = await GetById(id);
+        _rep.SoftDelete(_mapper.Map<Category>(category));
+        await _rep.SaveChangesAsync();
+    }
 }

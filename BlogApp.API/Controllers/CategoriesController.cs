@@ -82,5 +82,34 @@ public class CategoriesController : ControllerBase
             return BadRequest(e.Message);
         }
     }
+
+    [HttpDelete("{id}")]
+    public async Task<IActionResult> Delete(int id)
+    {
+        try
+        {
+            await _categoryService.DeleteAsync(id);
+            return NoContent();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+
+    [HttpDelete("SoftDelete/{id}")]
+    public async Task<IActionResult> SoftDelete(int id)
+    {
+        try
+        {
+            await _categoryService.SoftDeleteAsync(id);
+            return NoContent();
+        }
+        catch (Exception e)
+        {
+            return BadRequest(e.Message);
+        }
+    }
+    
     
 }

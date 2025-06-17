@@ -10,3 +10,4 @@
 /Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/obj/Debug/net9.0/refint/BlogApp.Core.dll
 /Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/obj/Debug/net9.0/BlogApp.Core.pdb
 /Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/obj/Debug/net9.0/ref/BlogApp.Core.dll
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.Core/obj/Debug/net9.0/BlogApp.Core.csproj.AssemblyReference.cache
