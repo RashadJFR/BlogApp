@@ -34,7 +34,7 @@ public class CategoryService: ICategoryService
 
     public async Task UpdateAsync(UpdateCategoryDto dto)
     {
-        var oldCategory = await GetById(dto.Id);
+        GetCategoryDto oldCategory;
         if (await _rep.IsExist(c => c.Name == dto.Name))
         {
             throw new CategoryNameExistException();

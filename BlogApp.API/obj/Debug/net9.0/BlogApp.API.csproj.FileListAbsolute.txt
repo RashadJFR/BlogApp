@@ -175,3 +175,4 @@
 /Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/bin/Debug/net9.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 /Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/bin/Debug/net9.0/Microsoft.Extensions.Identity.Core.dll
 /Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/bin/Debug/net9.0/Microsoft.Extensions.Identity.Stores.dll
+/Users/rashadjafarzade/RiderProjects/BlogApp/BlogApp.API/bin/Debug/net9.0/Microsoft.AspNetCore.Authentication.JwtBearer.dll

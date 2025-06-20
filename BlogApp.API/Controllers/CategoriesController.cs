@@ -2,12 +2,14 @@ using AutoMapper;
 using BlogApp.Business.DTOs.Category;
 using BlogApp.Business.Exceptions.CategoryExceptions;
 using BlogApp.Business.Services.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace BlogApp.API.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
+[Authorize]
 public class CategoriesController : ControllerBase
 {
     readonly ICategoryService _categoryService;
@@ -32,7 +34,6 @@ public class CategoriesController : ControllerBase
         {
             return BadRequest(e.Message);
         }
-        return Ok();
     }
 
     [HttpGet]
