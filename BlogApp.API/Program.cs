@@ -1,10 +1,14 @@
+using System.Net.Mime;
 using System.Reflection;
 using System.Text;
+using BlogApp.API.Utils;
 using BlogApp.Business;
+using BlogApp.Business.Exceptions.Base;
 using BlogApp.Core.Entities;
 using BlogApp.DAL;
 using BlogApp.DAL.Context;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -97,6 +101,8 @@ public class Program
             app.MapOpenApi();
 
         }
+        
+        app.UseCustomExceptionHandler();
         
         app.UseHttpsRedirection();
         app.UseAuthentication();

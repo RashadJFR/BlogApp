@@ -22,9 +22,21 @@ public class Repository<TEntity>:IRepository<TEntity> where TEntity: BaseEntity,
         return await Table.AsNoTracking().FirstOrDefaultAsync(x => x.Id == id && !x.IsDeleted);
     }
 
-    public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null)
+    public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes)
     {
-        return expression == null ? Table.Where(x=>!x.IsDeleted) : Table.Where(x=>!x.IsDeleted).Where(expression);
+        var query = expression == null
+            ? Table.Where(x => !x.IsDeleted)
+            : Table.Where(x => !x.IsDeleted).Where(expression);
+
+        if (includes != null)
+        {
+            foreach (var include in includes)
+            {
+                query = query.Include(include);
+            }
+        }
+        
+        return query;
     }
 
     public async Task<TEntity> Create(TEntity entity)

@@ -14,6 +14,7 @@ public static class BusinessServiceRegistrations
         services.AddAutoMapper(typeof(BusinessServiceRegistrations));
         services.AddScoped<ICategoryService, CategoryService>();
         services.AddScoped<IUserService, UserService>();
+        services.AddScoped<IBlogService, BlogService>();
         services.AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateCategoryDtoValidator>());
     }
 }

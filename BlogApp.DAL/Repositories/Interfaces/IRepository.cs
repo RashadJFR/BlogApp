@@ -8,7 +8,7 @@ public interface IRepository<TEntity> where TEntity : BaseEntity, new()
 {
     public DbSet<TEntity> Table { get; }
     public Task<TEntity?> GetById(int id);
-    public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null);
+    public IQueryable<TEntity> GetAll(Expression<Func<TEntity, bool>>? expression = null, params string[]? includes);
     
     public Task<TEntity> Create(TEntity entity);
     public void Update(TEntity entity);

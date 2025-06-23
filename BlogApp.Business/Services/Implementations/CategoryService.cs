@@ -54,7 +54,7 @@ public class CategoryService: ICategoryService
         }
         
         GetCategoryDto dto = _mapper.Map<GetCategoryDto>( await _rep.GetById(id));
-        return dto != null ? dto : throw new CategoryNullException();
+        return dto != null ? dto : throw new NotFoundException<Category>();
     }
 
     public List<GetCategoryDto> GetAll()

@@ -12,5 +12,6 @@ public static class DALServiceRegistrations
     public static void AddDALService(this IServiceCollection services)
     {
         services.AddScoped<ICategoryRepository, CategoryRepository>();
+        services.AddScoped<IBlogRepository, BlogRepository>();
     }
 }
